@@ -1,0 +1,18 @@
+n = int(input('Digite um número inteiro: '))
+n = str(n)
+nl = list(n)
+nlen = len(nl)
+n_list = [11]
+while nlen > 0:
+    n = int(n)
+    a = n%10
+    a = str(a)
+    n_list.append(a)
+    n = n//10
+    nlen -= 1
+    if n_list[-1] == n_list[-2]:
+        print('sim')
+        nlen == 0
+        break
+    elif nlen == 0:
+        print('não')
