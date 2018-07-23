@@ -12,7 +12,6 @@ while nlen > 0:
     nlen -= 1
     if n_list[-1] == n_list[-2]:
         print('sim')
-        nlen == 0
         break
     elif nlen == 0:
         print('não')
